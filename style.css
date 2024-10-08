@@ -1,0 +1,103 @@
+.hero-section {
+    position: relative;
+    background: url('assest/2-old.jpg') no-repeat center center/cover;
+    color: white;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% transparency */
+    z-index: 1;
+}
+
+.hero-section > * {
+    position: relative;
+    z-index: 2; /* Ensures content appears above the overlay */
+}
+
+
+.hero-section h1 {
+    font-size: 3rem;
+}
+
+.form-section {
+    background-color: rgba(2, 20, 72, 0.9);
+    padding: 19px;
+    border-radius: 10px;
+}
+
+.institutional-goals h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.goals-icons {
+    text-align: center;
+}
+
+.goal-item {
+    margin-bottom: 30px;
+}
+
+.goal-item i {
+    font-size: 2rem;
+    color: #ef7520;
+}
+
+.welcome-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.welcome-text {
+    max-width: 393px;
+}
+
+.experience-badge {
+    font-size: 2rem;
+    color: #20ad96;
+    font-weight: 700;
+}
+
+.btn-warning {
+    --bs-btn-color: #000;
+    --bs-btn-bg: #e67c0f;
+    --bs-btn-border-color: #e67c0f;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #e67c0f;
+    --bs-btn-hover-border-color: #e67c0f;
+    --bs-btn-focus-shadow-rgb: 217, 164, 6;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #e67c0f;
+    --bs-btn-active-border-color: #e67c0f;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #000;
+    --bs-btn-disabled-bg: #e67c0f;
+    --bs-btn-disabled-border-color: #e67c0f;
+}
+
+.btn-primary {
+    --bs-btn-color: black;
+    --bs-btn-bg: white;
+    --bs-btn-border-color: none;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: black;
+    --bs-btn-hover-border-color: black;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: black;
+    --bs-btn-active-border-color: white;
+    --bs-btn-active-shadow: inset 0 3px 5px white;
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: black;
+    --bs-btn-disabled-border-color: none;
+}
